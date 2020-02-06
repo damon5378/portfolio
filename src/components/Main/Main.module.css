@@ -1,0 +1,28 @@
+.main{
+    height: 100vh;
+    background-color: rgb(27, 214, 199);
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 80%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro__general{
+    display: flex;
+    flex-direction: column;
+}
+.intro__stub{
+    height: 400px;
+    width: 300px;
+    background-color: rgb(212, 82, 82);
+}
