@@ -1,4 +1,32 @@
 .slogan{
     min-height: 300px;
     background-color: rgb(53, 14, 19);
+    padding-top: 30px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.slogan__title{
+    text-align: center;
+    padding-top: 70px;
+    font-size: 22px;
+}
+.slogan__btn{
+    width: 100px;
+    padding: 5px 0;
+    border-radius: 25px;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+    transition: background-color .3s linear;
+    text-transform: uppercase;
+}
+.slogan__btn:hover{
+    cursor: pointer;
+    background-color: rgba(53, 153, 78, .7);
 }

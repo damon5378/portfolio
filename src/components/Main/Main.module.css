@@ -8,19 +8,20 @@
     width: 80%;
     /* border: 1px solid; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
  .intro{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.intro__general{
-    display: flex;
     flex-direction: column;
 }
+.intro__hi{
+    margin-bottom: 3px;
+}
+.intro__name{
+    margin-bottom: 3px;
+}
+
 .intro__stub{
     height: 400px;
     width: 300px;

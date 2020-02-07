@@ -1,0 +1,33 @@
+.projects__img{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(57, 22, 184);
+}
+.projects__item{
+    position: relative;
+}
+.projects__itemBtn{
+    padding: 7px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    transition: background-color .3s linear;
+}
+.projects__itemBtn:hover{
+    cursor: pointer;
+    background-color: rgba(53, 153, 78, .7);
+}
+.projects__itemTitle{
+    margin-top: 7px;
+}
+.projects__itemDescription{
+    margin-top: 7px;
+}
+.projects__itemText{
+    margin-left: 10px;
+}
