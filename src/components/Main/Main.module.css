@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap');
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
 .main{
     height: 100vh;
-    background-color: rgb(27, 214, 199);
+    background-color: #1e1b1c;
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 5;
 }
 .container {
     width: 80%;
@@ -14,16 +21,50 @@
  .intro{
     display: flex;
     flex-direction: column;
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.4;
 }
 .intro__hi{
     margin-bottom: 3px;
 }
 .intro__name{
     margin-bottom: 3px;
+    /* font-size: 30px; */
 }
 
-.intro__stub{
+.intro__borderImg{
+    width: 330px;
+    height: 430px;
+    background-color: transparent;
+    position: absolute;
+    border: 4px solid #9ecaed;
+    top: 50%;
+    left: 50%;
+    transform: translate(105%, -50%);
+    z-index: -9;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+/* .intro__stub{
     height: 400px;
     width: 300px;
     background-color: rgb(212, 82, 82);
+} */
+.intro__img{
+    background: url(../../img/main_photo.jpg);
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+}
+canvas{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -5;
+    width: 1349px;
+    height: 588px;
 }
