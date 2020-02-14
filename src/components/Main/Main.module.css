@@ -27,6 +27,7 @@ body{
 }
 .intro__hi{
     margin-bottom: 3px;
+    
 }
 .intro__name{
     margin-bottom: 3px;
@@ -44,6 +45,9 @@ body{
     transform: translate(105%, -50%);
     z-index: -9;
     box-shadow: 0 0 10px #9ecaed;
+}
+.intro__borderImg:hover{
+    transform: translate(-110%,-50%);
 }
 
 /* .intro__stub{

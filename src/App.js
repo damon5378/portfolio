@@ -7,11 +7,13 @@ import Projects from './components/Projects/Projects';
 import Slogan from './components/Slogan/Slogan';
 import Contacts from './components/Contacts/Contacts';
 import Footer from './components/Footer/Footer';
+import ScrollBar from './components/ScrollBar/ScrollBar';
 
 function App() {
   return (
     <div className="App">
       <div className = "portfolio">
+        <ScrollBar />
         <Header />
         <Main />
         <Skills />
