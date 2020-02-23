@@ -1,6 +1,58 @@
+/* body, html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1e1b1c;
+}
+.slogan__bubbles{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.slogan__bubble{
+    position: absolute;
+    bottom: 0;
+    background: #f1f1f1;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: flying 10s infinite ease-in;
+}
+
+.slogan__bubble:nth-child(1){
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    animation-duration: 8s;
+} */
+
+/* @keyframes flying {
+    0%{
+        bottom: -100px;
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(200px);
+    }
+    100%{
+        bottom: 1000px;
+        transform: translateX(0);
+    }
+} */
+
+
+
 .slogan{
     min-height: 300px;
-    background-color: rgb(53, 14, 19);
+    background-color: #1e1b1c;
     padding-top: 30px;
 }
 
@@ -14,8 +66,11 @@
     text-align: center;
     padding-top: 70px;
     font-size: 22px;
+    color: thistle;
+    text-transform: uppercase;
+    font-weight: bold;
 }
-.slogan__btn{
+/* .slogan__btn{
     width: 100px;
     padding: 5px 0;
     border-radius: 25px;
@@ -29,4 +84,101 @@
 .slogan__btn:hover{
     cursor: pointer;
     background-color: rgba(53, 153, 78, .7);
+} */
+
+
+.slogan a{
+    position: relative;
+    padding: 20px 50px;
+    display: block;
+    margin-left: 500px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.slogan a span{
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 8px;
+}
+
+.slogan a .sloganLiquid{
+    position: absolute;
+    left: 0;
+    top: -80px;
+    width: 200px;
+    height: 200px;
+    background: #4973ff;
+    box-shadow: inset 0 0 50px rgba(0,0,0, .5);
+    transition: .5s;
+}
+.slogan a:hover .sloganLiquid{
+    top: -120px;
+}
+
+.slogan a .sloganLiquid:before,
+.slogan a .sloganLiquid:after {
+    content: '';
+    position: absolute;
+    width: 180%;
+    height: 200%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #1e1b1c;
+}
+
+.slogan a .sloganLiquid:before{
+    border-radius: 45%;
+    background: rgba(20,20,20,1);
+    animation: animate 5s linear infinite;
+}
+.slogan a .sloganLiquid:after{
+    border-radius: 40%;
+    background: rgba(20,20,20,.5);
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+
+@media (max-width: 1024px) {
+    .slogan a{
+        margin-left: 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    .slogan a{
+        margin-left: 370px;
+    }
+}
+
+@media (max-width: 767px) {
+    .slogan a{
+        margin-left: 270px;
+    }
+}
+
+@media (max-width: 567px) {
+    .slogan a{
+        margin-left: 180px;
+    }
+}
+
+@media (max-width: 360px) {
+    .slogan a{
+        margin-left: 70px;
+    }
 }

@@ -6,7 +6,10 @@ const Slogan = () => {
         <div className = {styles.slogan}>
             <div className={styles.slogan__title}>Consider remote work</div>
             <div className={styles.container}>
-                <button className = {styles.slogan__btn}>Hire Me</button>
+                <a href ="#">
+                <span className = {styles.slogan__btn}>Hire Me</span>
+                <div className = {styles.sloganLiquid}></div>
+                </a>
             </div>
         </div>
     );

@@ -1,6 +1,6 @@
 .footer{
     min-height: 300px;
-    background-color: rgb(153, 140, 19);
+    background-color: #1e1b1c;
 }
 .container{
     width: 100%;
@@ -13,16 +13,46 @@
     padding-top: 50px;
     margin-bottom: 50px;
     font-size: 22px;
+    color: thistle;
+    text-transform: uppercase;
 }
 .footer__links{
     display: flex;
     justify-content: space-around;
+}
+.footer__linkVk{
+    background: url(../Footer/img/vk.svg);
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center center;
     
 }
-.footer__link{
+.footer__linkFb{
+    background: url(../Footer/img/facebook.svg);
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center center;
+}
+.footer__linkInst{
+    background: url(../Footer/img/instagram.svg);
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center center;
+}
+.footer__linkLink{
+    background: url(../Footer/img/linkedin.svg);
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center center;
+}
+/* .footer__link{
     border: 1px solid;
     padding: 10px;
-}
+} */
 .footer__link:hover{
     cursor: pointer;
 }
@@ -30,4 +60,5 @@
     text-align: center;
     margin-top: 70px;
     font-weight: 700;
+    color: #fff;
 }

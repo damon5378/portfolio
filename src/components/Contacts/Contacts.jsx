@@ -18,9 +18,10 @@ const Contacts = () => {
                 <textarea placeholder = "Message"></textarea>
 
                 </div>
+                <button className = {styles.contacts__btn}>Send</button>
 
             </form>
-                <button className = {styles.contacts__btn}>Send</button>
+                
             
             </div>
         </div>

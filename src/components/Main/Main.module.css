@@ -69,6 +69,57 @@ canvas{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -5;
-    width: 1349px;
-    height: 588px;
+    max-width: 2560px;
+    max-height: 1080px;
+}
+
+@media (max-width: 1366px) {
+    .intro__borderImg{
+        top: 50%;
+        left: 50%;
+        transform: translate(35%, -50%);
+    }
+}
+
+@media (max-width: 1024px) {
+    .intro__borderImg{
+        top: 50%;
+        left: 50%;
+        transform: translate(15%, -50%);
+    }
+}
+
+@media (max-width: 767px) {
+    .intro__borderImg{
+        transform: translate(1%, -50%);
+    }
+}
+
+@media (max-width: 567px) {
+    .intro__borderImg{
+        width: 300px;
+        height: 420px;
+        transform: translate(-35%, -35%);
+    }
+    .intro__img{
+        width: 280px;
+        height: 380px;
+        transform: translate(3%, -8%);
+    }
+    .container{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 360px) {
+    .intro__borderImg{
+        width: 230px;
+        height: 350px;
+        transform: translate(-47%, -25%);
+    }
+    .intro__img{
+        width: 220px;
+        height: 320px;
+        transform: translate(-15%, -7%);
+    }
 }

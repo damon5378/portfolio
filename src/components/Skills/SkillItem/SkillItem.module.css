@@ -1,6 +1,108 @@
-.skills__item{
+*{
+    font-family:sans-serif;
+    list-style: none;
+    padding: 0;
+}
+body{
+    background-color: #1e1b1c;
+}
+/* .skills__item li{
+    margin: 20px 0;
+} */
+.skills__bar{
+    display: block;
+    background: #353b48;
+    height: 2px;
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+
+.skills__bar span{
+    height: 2px;
+    float: left;
+    background: #2187e7;
+    
+}
+
+.skills__html{
+    width: 75%;
+    animation: html 3s;
+    animation-delay: 5s;
+}
+.skills__css{
+    width: 70%;
+    animation: css 3s;
+    animation-delay: 5s;
+}
+.skills__js{
+    width: 1%;
+    animation: js 4s;
+    animation-delay: 5s;
+}
+.skills__react{
+    width: 1%;
+    animation: react 4s;
+    animation-delay: 5s;
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes js {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 1%;
+    }
+}
+
+@keyframes react {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 1%;
+    }
+}
+/* .skills__item{
     border: 1px solid;
-    padding: 70px 30px;
+    padding: 30px 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+    margin-left: 20px;
 }
 .skills__img{
     width: 50px;
@@ -13,7 +115,7 @@
     text-align: center;
     margin-top: 15px;
     margin-bottom: 15px;
-}
+} */
 
 
 

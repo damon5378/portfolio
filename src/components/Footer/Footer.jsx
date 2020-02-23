@@ -9,19 +9,19 @@ const Footer = () => {
                 <div className={styles.footer__links}>
 
                     <div className = {styles.footer__link}>
-                        <a><img className = {styles.footer__linkVk}></img>VK</a>
+                        <a><img className = {styles.footer__linkVk}></img></a>
                     </div>
 
                     <div className = {styles.footer__link}>
-                        <a><img className = {styles.footer__linkFb}></img>FB</a>
+                        <a><img className = {styles.footer__linkFb}></img></a>
                     </div>
 
                     <div className = {styles.footer__link}>
-                        <a><img className = {styles.footer__linkInst}></img>Inst</a>
+                        <a><img className = {styles.footer__linkInst}></img></a>
                     </div>
 
                     <div className = {styles.footer__link}>
-                        <a><img className = {styles.footer__linkLink}></img>LinkIn</a>
+                        <a><img className = {styles.footer__linkLink}></img></a>
                     </div>
 
                 </div>
